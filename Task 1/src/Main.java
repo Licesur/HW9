@@ -1,36 +1,36 @@
+import java.util.Scanner;
 public class Main {
     static double a = 0;
     static double b = 0;
 
     public static void main(String[] args) {
-        //todo Вам нужно дополнить методы так, чтобы получился рабочий калькулятор
         a = inputDouble();
         b = inputDouble();
 
-        sum();      //Метод суммирования чисел
-        multiply(); //Метод умножения чисел
-        diff();     //Метод вычитания чисел
-        divide();   //Метод деления чисел
+        sum(a,b);      //Метод суммирования чисел
+        multiply(a,b); //Метод умножения чисел
+        diff(a,b);     //Метод вычитания чисел
+        divide(a,b);   //Метод деления чисел
     }
 
-    private static void divide() {
-        //todo дописать логику и печать результата
+    private static void divide(double a, double b) {
+        System.out.println(a/b);
     }
 
-    private static void diff() {
-        //todo дописать логику и печать результата
+    private static void diff(double a, double b) {
+        System.out.println(a-b);
     }
 
-    private static void multiply() {
-        //todo дописать логику и печать результата
+    private static void multiply(double a, double b) {
+        System.out.println(a*b);
     }
 
-    private static void sum() {
-        //todo дописать логику и печать результата
+    private static void sum(double a, double b) {
+        System.out.println(a+b);
     }
 
-    private static double inputDouble() {
-        //todo дописать логику
-        return 0;
+
+    private static double inputDouble(){
+        return new Scanner(System.in).nextDouble();
     }
 }
